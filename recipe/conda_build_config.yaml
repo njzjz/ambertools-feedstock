@@ -8,3 +8,5 @@ mpi:
   - openmpi
   - mpich
   - nompi
+channel_sources:
+  - njzjz,conda-forge
