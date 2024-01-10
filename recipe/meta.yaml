@@ -4,7 +4,7 @@
 {% set version = "23.3" %}
 # use run or skip
 {% set unit_tests = "skip" %}
-{% set build = 7 %}
+{% set build = 8 %}
 {% set build = build + 100 %}  # [mpi == 'nompi']
 {% set build = build + 1000 %}  # dprc
 
@@ -13,8 +13,8 @@ package:
   version: {{ version }}
 
 source:
-  url: https://public.njzjz.win/amberdprc20240105.tar.bz2
-  sha256: 9685d327292ea2c1b39d30a54a2b93ee726caa4fdcc6fd1821b88458e931aeea
+  url: https://public.njzjz.win/AmberTools23.10jan24.tar.bz2
+  sha256: e7d3febf571cfb6ee908412c2df4fb139e7cde35a53a92f55c13ac77ef974bda
   patches:
     - patches/do_not_symlink_missing_ff12pol.patch
     - patches/do_not_install_vendored_parmed.patch
